@@ -1,0 +1,13 @@
+// $icons-font-path: '~vsuit/dist/styles/fonts';
+// $icons-font-path: '../vsuit/src/styles/common/icomoon/fonts';
+// @import "~vsuit/dist/styles/vsuit";
+// @import "~vsuit/src/styles/index";
+// @import "../vsuit/src/styles/index.scss";
+// @import "./layout";
+// @import "./chart";
+// @import "./select";
+// @import "./nodata";
+
+@import "./variable.scss";
+$icons-font-path: '~vsuite/src/styles/common/iconfont/fonts';
+@import '~vsuite/src/styles/index.scss';

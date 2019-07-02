@@ -1,0 +1,186 @@
+@charset "utf-8";// -----------Prefix -------------
+$css-prefix             : vsu- !default !default;//prefix for all
+$css-prefix-iconfont    : vsu-ion !default;//prefix for icon
+
+//=====================Base start==========================
+// -----------Color start----------- 
+// primary color
+$primary-color          : #1864FF !default;// primary color
+$primary-hover-color    : #518aff !default;
+$primary-active-color   : #114abf !default;
+$primary-disabled-color : #e2e2e2 !default;
+
+// action color 
+$info-color             : #2db7f5 !default;
+$success-color          : #19be6b !default; 
+$warning-color          : #ff9900 !default;
+$error-color            : #ed3f14 !default;
+
+//chart color
+$light-green-color      : #2FC277 !default;
+$deep-green-color       : #13A1C2 !default; 
+$purple-color           : #9543E0 !default;
+$light-red-color        : #F26463 !default;
+$orange-color           : #FFC05B !default;
+$yellow-color           : #FAD814 !default;
+
+//assist color
+$assist-6-color         : #05183F !default;
+$assist-5-color         : #558CFF !default;
+$assist-4-color         : #88AFFF !default;
+$assist-3-color         : #B4CCFF !default;
+$assist-2-color         : #DAE6FF !default;
+$assist-1-color         : #EEF3FF !default;
+$assist-0-color         : #FFFFFF !default;
+
+//link color
+$link-color             : $primary-color !default;
+$link-hover-color       : $primary-hover-color !default;
+$link-active-color      : $primary-active-color !default;
+
+//font color            
+$title-color            : #262626 !default;         
+$text-color             : #595959 !default;      
+$describe-color         : #8c8c8c !default;  
+$tip-color              : #bfbfbf !default;
+
+//border color          
+$border-color-base      : #D9D9D9 !default;  // outside
+$border-color-split     : #e9eaec !default;  // inside
+$border-color-disabled  : #CFCCD0 !default;  // outside
+
+
+//back color
+$background-color-base  : #fff !default;  // base
+$background-color-disabled  : #f3f3f3 !default;  // base
+//-------------Color end-------------------
+
+//-------------Font start------------------
+//font
+$font-family            : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",SimSun, sans-serif !default;
+// $font-family            : "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif !default;
+$code-family            : Consolas,Menlo,Courier,monospace !default;
+$font-size-small        : 12px !default;
+$line-height-small      : 20px !default;
+$font-size-base         : 14px !default;
+$line-height-base       : 22px !default;
+$font-size-title2       : 16px !default;
+$line-height-title2     : 24px !default;
+$font-size-title        : 20px !default;
+$line-height-title      : 28px !default;
+$font-size-sum-data     : 24px !default;
+$line-height-sum-data   : 32px !default;
+$font-size-sum-text     : 30px !default;
+$line-height-sum-text   : 38px !default;
+$line-height-computed   : floor(($font-size-base * $line-height-base)) !default;
+//-------------Font end--------------------
+
+// header styles
+$header-height: 64px;
+$header-backgroundColor:#061940;
+$header-boxShadow: 0 2px 6px 0 rgba(19,46,102,0.35);
+$header-menu-height: 64px;
+$header-menuItem-height: 64px;
+$header-menuItem-lineHeight: 64px;
+$header-menuCategory-left: 256px;
+$header-menuCategory-fontSize: 14px;
+$header-menuCategory-height: 58px;
+$header-menuCategory-lineHeight: 58px;
+$header-menuCategory-color: #fff;
+$header-menuCategoryItem-active-borderBottom: 2px solid #fff !important;
+$header-menuFunction-right: 24px;
+$header-menuFunction-fontSize: 12px;
+$header-menuFunction-color: #fff;
+@mixin category-active-line{
+    content: " ";
+    display: block;
+    position: relative;
+    bottom: 4px;
+    left: -4px;
+    background: #fff;
+    width: 64px;
+    height:2px;
+}
+@mixin menu-active-line{
+    content: " ";
+    display: block;
+    position: relative;
+    bottom: 4px;
+    left: 4px;
+    background: #fff;
+    width: 64px;
+    height:2px;
+}
+
+//sider styles
+$sider-width: 256px !important;
+$sider-top: 64px;
+$sider-children-height: 100%;
+$sider-boxShadow: 1px 0 4px 0 rgba(19,46,102,0.12);
+$sider-menu-width:256px !important;
+$sider-menu-zIndex:0;
+$sider-menu-submenuActive-title-color: #4a4a4a;
+$sider-menu-submenuActive-title-opacity: 1;
+$sider-menu-submenuActive-title-icon-color: #4a4a4a;
+$sider-menu-submenuActive-title-icon-marginRight: 14px;
+$sider-menu-submenu-title-width: 256px !important;
+$sider-menu-submenu-title-height: 52px !important;
+$sider-menu-submenu-title-padding: 14px 16px 14px 25px;
+$sider-menu-submenu-title-color: #000;
+$sider-menu-submenu-title-fontSize: 14px;
+$sider-menu-submenu-title-opacity: .65;
+$sider-menu-submenu-title-icon-color: #4a4a4a;
+$sider-menuItem-width: 256px !important;
+$sider-menuItem-height: 52px !important;
+$sider-menuItem-color: #4a4a4a;
+$sider-menuItem-fontSize: 14px;
+$sider-menuItem-opacity: .65;
+$sider-menuItem-padding: 0;
+$sider-menuItem-active-color: #4A4A4A;
+$sider-menuItem-active-opacity: 1;
+$sider-menuItem-active-backgroundColor: #DAE6FF;
+$sider-menuItem-active-borderRight: 0;
+$sider-menuItem-span-padding: 14px 0 14px 50px;
+$sider-menuItem-span-position: absolute;
+$sider-menuItem-span-width: 256px;
+$sider-menuItem-span-height: 52px;
+@mixin menu-submenu-line{
+    content: " ";
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 22px;
+    background: #E6E8EA;;
+    width: 212px;
+    height: 1px;
+}
+
+//actionbar styles
+$panelSelect-height: 64px;
+$panelSelect-width: 100%;
+$panelSelect-left: 0;
+$panelSelect-paddingLeft: 256px;
+$panelSelect-backgroundColor: #fff;
+$panelSelect-boxShadow: 1px 0 4px 0 rgba(19,46,102,0.12);
+$panelSelect-titleWrap-height: 64px;
+$panelSelect-titleWrap-padding: 16px 32px;
+$panelSelect-titleWrap-pageTitle-fontSize: 20px;
+$panelSelect-titleWrap-pageTitle-color: rgba(0,0,0,0.85);
+$panelSelect-titleWrap-pageTitle-display: inline-block;
+$panelSelect-titleWrap-pageTitle-verticalAlign: middle;
+$panelSelect-titleWrap-pageInfo-display: inline-block;
+$panelSelect-titleWrap-pageInfo-verticalAlign: middle;
+$panelSelect-titleWrap-pageInfo-marginLeft: 5px;
+$panelSelect-titleWrap-pageInfo-marginTop: 3px;
+$panelSelect-titleWrap-pageInfo-infoTrigger-cursor: pointer;
+$panelSelect-selectionWrap-position: absolute;
+$panelSelect-selectionWrap-right: 0;
+$panelSelect-selectionWrap-height: 64px;
+$panelSelect-selectionWrap-lineHeight: 64px;
+$panelSelect-selectionWrap-paddingRight: 30px;
+$panelSelect-selectionWrap-selection-display: inline-block;
+$panelSelect-selectionWrap-selection-marginLeft: 24px;
+$panelSelect-selectionWrap-selection-vsuDate-verticalAlign: middle;
+$panelSelect-selectionWrap-selectionLabel-dislpay: inline;
+$panelSelect-selectionWrap-selectionLabel-fontSize: 14px;
+
